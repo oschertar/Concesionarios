@@ -37,7 +37,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
-
+//Pruebaaaa
 public class Annadir extends JDialog {
 
 	/**
@@ -141,15 +141,15 @@ public class Annadir extends JDialog {
 			buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
 			getContentPane().add(buttonPane, BorderLayout.SOUTH);
 
-			JButton Añadir = new JButton("A\u00F1adir");
-			Añadir.addActionListener(new ActionListener() {
+			JButton AÃ±adir = new JButton("A\u00F1adir");
+			AÃ±adir.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
 					try {
 						if (General.concesionario.annadir(
 								txtMatricula.getText(), colorSeleccionado(),
 								(Modelo) comboBoxModelo.getSelectedItem())) {
 							JOptionPane.showMessageDialog(contentPanel,
-									"Coche añadido con exito");
+									"Coche aÃ±adido con exito");
 						}
 					} catch (HeadlessException | MatriculaNoValidaException
 							| ColorNoValidoException | ModeloNoValidoException
@@ -176,7 +176,7 @@ public class Annadir extends JDialog {
 					}
 				}
 			});
-			buttonPane.add(Añadir);
+			buttonPane.add(AÃ±adir);
 			{
 				JButton botonSalir = new JButton("Salir");
 				botonSalir.addActionListener(new ActionListener() {
